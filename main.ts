@@ -5,8 +5,6 @@
  * This program says the temperature in Kelvin
 */
 
-
-
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 basic.pause (1000)
@@ -15,6 +13,6 @@ input.onButtonPressed(Button.A, function () {
     let temperatureC = input.temperature()
     let temperatureK = (temperatureC + 273.15)
     temperatureK = Math.round(temperatureK)
-    
+basic.clearScreen()    
     basic.showString('The temperature is:'+ temperatureK.toString()+'K')
 })
